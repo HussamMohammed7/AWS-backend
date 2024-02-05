@@ -28,5 +28,12 @@ app.post('/upload', upload.single('docxFile'), async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+app.get('/hello', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.get('/', (req, res) => {
+  res.send('Welcome to my server!');
+});
 
 module.exports = app;
