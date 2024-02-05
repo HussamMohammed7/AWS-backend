@@ -12,7 +12,7 @@ const upload = multer({ storage });
 
 app.use(express.json());
 
-app.post('/api/upload', upload.single('docxFile'), async (req, res) => {
+app.post('/upload', upload.single('docxFile'), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).send('No file uploaded.');
