@@ -1,7 +1,6 @@
 {
     "functions": {
       "api/upload": {
-        "handler": "server.js", 
         "memory": 256 
       }
     }
